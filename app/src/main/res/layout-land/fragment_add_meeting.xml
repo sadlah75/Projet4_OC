@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".fragments.AddMeetingFragment">
+
+
+    <LinearLayout
+        android:id="@+id/fragment_add_meeting_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/addMeeting_tf_room"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="48dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:hint="Room">
+
+            <AutoCompleteTextView
+                android:id="@+id/addMeeting_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/addMeeting_tf_subject"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_weight="2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addMeeting_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sujet" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addMeeting_button_saveTime"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="8dp"
+        android:text="Heure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_add_meeting_ll" />
+
+    <TextView
+            android:id="@+id/addMeeting_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            app:layout_constraintStart_toEndOf="@id/addMeeting_button_saveTime"
+            app:layout_constraintBottom_toBottomOf="@id/addMeeting_button_saveTime"
+            app:layout_constraintTop_toTopOf="@id/addMeeting_button_saveTime"
+            android:text="Heure: "/>
+
+        <TextView
+            android:id="@+id/addMeeting_TextView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            app:layout_constraintStart_toEndOf="@id/addMeeting_tv_time"
+            app:layout_constraintBottom_toBottomOf="@id/addMeeting_tv_time"
+            tools:text="12h30"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addMeeting_button_saveDate"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="100dp"
+            app:layout_constraintStart_toEndOf="@id/addMeeting_TextView_time"
+            app:layout_constraintTop_toBottomOf="@id/fragment_add_meeting_ll"
+            android:text="date" />
+
+        <TextView
+            android:id="@+id/addMeeting_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24dp"
+            app:layout_constraintStart_toEndOf="@id/addMeeting_button_saveDate"
+            app:layout_constraintBottom_toBottomOf="@id/addMeeting_button_saveDate"
+            app:layout_constraintTop_toTopOf="@id/addMeeting_button_saveDate"
+            android:text="Date: "/>
+        <TextView
+            android:id="@+id/addMeeting_TextView_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            app:layout_constraintStart_toEndOf="@id/addMeeting_tv_date"
+            app:layout_constraintBottom_toBottomOf="@id/addMeeting_tv_date"
+            tools:text="01/03/2022"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addMeeting_button_addEmails"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/addMeeting_button_saveDate"
+            android:text="Emails" />
+
+        <TextView
+            android:id="@+id/addMeeting_tv_participants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toEndOf="@id/addMeeting_button_addEmails"
+            app:layout_constraintTop_toTopOf="@id/addMeeting_button_addEmails"
+            app:layout_constraintBottom_toBottomOf="@id/addMeeting_button_addEmails"
+            android:text="Participants (min. 2):" />
+
+        <TextView
+            android:id="@+id/addMeeting_TextView_emails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            app:layout_constraintStart_toEndOf="@id/addMeeting_tv_participants"
+            app:layout_constraintBottom_toBottomOf="@id/addMeeting_tv_participants"
+            tools:text="sadek@gmail.com"
+            android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button"
+        android:id="@+id/addMeeting_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Save"
+        android:layout_marginBottom="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

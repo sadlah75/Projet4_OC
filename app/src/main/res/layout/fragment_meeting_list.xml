@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_meetings"
+    android:transitionName="com.example.mareu.ui.meeting_list.MeetingFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layoutManager="LinearLayoutManager"
+    tools:context=".fragments.MeetingFragment"
+    tools:listitem="@layout/meeting_item">
+</androidx.recyclerview.widget.RecyclerView>

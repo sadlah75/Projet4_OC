@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Activity_list_meeting_margin">16dp</dimen>
+    <dimen name="dialog_participants_tf_margin">40dp</dimen>
+    <dimen name="dialog_room_spinner_margin">30dp</dimen>
+    <dimen name="dialog_room_spinner_padding">10dp</dimen>
+    <dimen name="dialog_time_picker_height">150dp</dimen>
+    <dimen name="meeting_item_layout_margin">16dp</dimen>
+    <dimen name="meeting_item_marginStart">8dp</dimen>
+    <dimen name="meeting_item_iv_layout">40dp</dimen>
+</resources>

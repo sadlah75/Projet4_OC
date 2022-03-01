@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Ma réu</string>
+
+    <string-array name="rooms_array">
+        <item>Room A</item>
+        <item>Room B</item>
+        <item>Room C</item>
+        <item>Room D</item>
+        <item>Room E</item>
+        <item>Room F</item>
+        <item>Room G</item>
+        <item>Room H</item>
+        <item>Room I</item>
+        <item>Room J</item>
+    </string-array>
+
+
+    <string-array name="rooms_color">
+        <item>#97ebdb</item>
+        <item>#40a8db</item>
+        <item>#97ebdb</item>
+        <item>#40a8db</item>
+        <item>#97ebdb</item>
+        <item>#40a8db</item>
+        <item>#97ebdb</item>
+        <item>#40a8db</item>
+        <item>#97ebdb</item>
+        <item>#40a8db</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialog_participants_tf_label">Participant</string>
+    <string name="menu_title_filtre_par_salle">Filtrer par salle</string>
+    <string name="menu_title_filtre_par_date">Filtrer par date</string>
+    <string name="menu_title_réinitialisation">Réinitialiser</string>
+    <string name="meeting_item_tv_text">M</string>
+    <string name="fragment_add_meeting_tv_room">Room</string>
+    <string name="fragment_add_meeting_tv_sujet">Sujet</string>
+    <string name="fragment_add_meeting_tv_heure">Heure:</string>
+    <string name="fragment_add_meeting_tv_participants">Participants (min. 2):</string>
+    <string name="fragment_add_meeting_text_button">Heure</string>
+    <string name="fragment_add_meeting_text_button_date">date</string>
+    <string name="fragment_add_meeting_text_tv_date">Date:</string>
+    <string name="fragment_add_meeting_text_button_mails">Emails</string>
+    <string name="fragment_add_meeting_text_button_save">Save</string>
+</resources>
