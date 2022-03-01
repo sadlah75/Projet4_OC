@@ -1,9 +1,10 @@
-# Entrevoisins
+# Ma réu
 
 Projet 4 dans le cadre de la formation Développeur Android - OpenClassrooms.
 
 ## Description
 
+Maréu est une application permettant la gestion de salles de réunions : suppression, création et filtre par date et par salle. 
 
 ## Installation
 
